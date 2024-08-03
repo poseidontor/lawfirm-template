@@ -1,0 +1,52 @@
+---
+import Widget from './Widget.astro'
+---
+
+<service>
+    <div style="padding-top: 5%;">
+        <p style="text-align: center; font-family: Arial; color: #fff; font-size: 20px;">
+            PREFIX FOR THE SERVICE SECTION WILL BE HERE
+        </p>
+    </div>
+    <div>
+        <p style="text-align: center; font-family: Verdana; color: #fff; font-size: 40px; font-weight: bold;">
+            Our Services
+        </p>
+    </div>
+    <div class="widget-container">
+        <Widget message="Civil" />
+        <Widget message="Criminal" />
+        <Widget message="High Court" />
+    </div>
+    <div class="widget-container">
+        <Widget message="Service 4" />
+        <Widget message="Service 5" />
+        <Widget message="Service 6" />
+    </div>
+    <div class="image-container">
+        <img src="../../public/justice3.jpg" style="width: 100%; border-radius: 5%;"/>
+    </div>
+</service>
+
+<style>
+    service {
+        background: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .widget-container {
+        padding: 5%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .image-container {
+        padding: 5%;
+        /* display: inline-block; */
+        display: flex;
+        justify-content: center;
+    }
+</style>
