@@ -1,0 +1,54 @@
+<!-- Ownership rights - Vighnesh Raje -->
+
+---
+const { img, name, qualification, experties } = Astro.props
+---
+
+<member>
+    <div class="image-container">
+        <img class="img-person" src={img} />
+        
+        <p style="text-align: center; display: flex; flex-direction: column; "> 
+            <span class="name">{name}</span>
+            <span class="qual">{qualification}</span>
+            <span class="qual">{experties}</span>
+        </p>
+    </div>
+</member>
+
+<style>
+
+    member {
+        padding: 5%;
+    }
+
+    .image-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img-person {
+        width: 150px; 
+        height: 150px; 
+        border-radius: 50%; 
+        object-fit: cover; 
+    }
+
+    .name {
+        color: #000000;
+        padding: 0px, 100px;
+        font-family: Arial;
+        font-size: 25px;
+        text-align: center;
+        padding-bottom: 15px;
+    }
+
+    .qual {
+        color: #1f1d1d;
+        padding: 0px, 100px;
+        font-family: Arial;
+        font-size: 18px;
+        padding-bottom: 8px;
+        text-align: center;
+    }
+</style>

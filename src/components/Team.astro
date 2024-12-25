@@ -1,0 +1,45 @@
+---
+import Member from "./Member.astro";
+---
+
+<!-- Ownership rights - Vighnesh Raje -->
+
+<team>
+    <div>
+            <p class="title">Our Team</p>
+    </div>
+    <div class="members">
+        <Member img="/images/person1.jpg" name="Test Person" qualification="BA,LLB" experties="Society,Civil,Murder" />
+        <Member img="/images/person1.jpg" name="Test Person" qualification="BA,LLB" experties="Society,Civil,Murder" />
+        <Member img="/images/person1.jpg" name="Test Person" qualification="BA,LLB" experties="Society,Civil,Murder" />
+    </div>
+    <div class="members">
+        <Member img="/images/person1.jpg" name="Test Person" qualification="BA,LLB" experties="Society,Civil,Murder" />
+        <Member img="/images/person1.jpg" name="Test Person" qualification="BA,LLB" experties="Society,Civil,Murder" />
+    </div>
+</team>
+
+<style>
+    team {
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        padding: 10% 5%;
+
+    }
+
+    .members {
+        padding: 5%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .title {
+       text-align: center; 
+       font-family: Verdana; 
+       color: #000000; 
+       font-size: 40px; 
+       font-weight: bold; 
+    }
+</style>
